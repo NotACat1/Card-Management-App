@@ -1,0 +1,44 @@
+@use '@styles/mixins/typography';
+@use '@styles/mixins/buttons';
+@use '@styles/mixins/interaction';
+@use '@styles/variables/spacing';
+@use '@styles/variables/transitions';
+@use '@styles/variables/z-index';
+
+.component {
+  position: sticky;
+  position: sticky;
+  top: 0;
+  z-index: z-index.$z-index-header;
+  background-color: var(--secondary);
+  padding-top: spacing.$padding-small;
+  padding-bottom: spacing.$padding-small;
+
+  &__logo {
+    cursor: pointer;
+    color: var(--text);
+    display: block;
+    height: 25px;
+    width: auto;
+  }
+
+  &__btn {
+    @include buttons.button(
+      var(--button-primary-bg),
+      var(--primary),
+      var(--button-primary-bg)
+    ) {
+      @include typography.typography-regular;
+
+      display: flex;
+      gap: spacing.$padding-small;
+      align-items: center;
+      transition: all transitions.$transition-medium-ease-in-out;
+    }
+
+    @include interaction.interaction-styles {
+      background-color: var(--button-primary-bg);
+      border-color: var(--button-primary-bg);
+    }
+  }
+}
