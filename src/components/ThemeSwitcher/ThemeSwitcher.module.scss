@@ -1,0 +1,21 @@
+@use '@styles/mixins/buttons';
+@use '@styles/variables/spacing';
+
+.component {
+  cursor: pointer;
+
+  @include buttons.button(
+    var(--button-primary-bg),
+    var(--primary),
+    var(--button-primary-bg)
+  ) {
+    display: block;
+    padding: spacing.$padding-small;
+    border-radius: 5px;
+  }
+
+  &__icon {
+    height: 20px;
+    width: auto;
+  }
+}
