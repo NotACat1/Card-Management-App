@@ -7,7 +7,6 @@
 
 .component {
   position: sticky;
-  position: sticky;
   top: 41px;
   width: 100%;
   display: flex;
@@ -23,7 +22,7 @@
 
     @include buttons.button(
       var(--button-secondary-bg),
-      var(--text),
+      var(--button-secondary-text),
       var(--button-secondary-border)
     ) {
       @include typography.typography-regular;
@@ -34,14 +33,14 @@
 
     @include interaction.interaction-styles {
       background-color: var(--button-primary-bg);
-      border-color: var(--button-primary-bg);
-      color: var(--primary);
+      color: var(--button-primary-text);
+      border-color: var(--button-primary-border);
     }
 
     &_active {
       @include buttons.button(
         var(--button-primary-bg),
-        var(--primary),
+        var(--button-primary-text),
         var(--button-primary-border)
       );
     }
