@@ -1,19 +1,19 @@
 // Цвета светлой темы
 $light-theme-colors: (
-  primary: #ffffff,
+  primary: #fff,
   secondary: #f8f9fa,
   text: #212529,
   accent: #4493f8,
 
   button-primary-bg: #262626,
-  button-primary-border: #ffffff,
-  button-primary-bg-hover: #000,
   button-primary-text: #fff,
+  button-primary-border: #fff,
+  button-primary-bg-hover: #000,
 
-  button-secondary-bg: #262626,
-  button-secondary-border: #000000d9,
-  button-secondary-bg-hover: #0000001f,
-  button-secondary-text: #000000d9,
+  button-secondary-bg: #ededed,
+  button-secondary-text: #212529,
+  button-secondary-border: #212529,
+  button-secondary-bg-hover: #e0e0e0,
 );
 
 // Цвета тёмной темы
@@ -23,13 +23,13 @@ $dark-theme-colors: (
   text: #dee2e6,
   accent: #4493f8,
 
-  button-primary-bg: #ffffff,
+  button-primary-bg: #fff,
+  button-primary-text: #212529,
   button-primary-border: #000000d9,
   button-primary-bg-hover: #bfbfbf,
-  button-primary-text: #000000d9,
 
   button-secondary-bg: #ffffff0f,
+  button-secondary-text: #fff,
   button-secondary-border: #d6d6d6,
   button-secondary-bg-hover: #ffffff1f,
-  button-secondary-text: #d6d6d6,
 );
