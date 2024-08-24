@@ -1,0 +1,65 @@
+@use '@styles/mixins/typography';
+@use '@styles/mixins/buttons';
+@use '@styles/mixins/interaction';
+@use '@styles/variables/spacing';
+
+.information {
+  display: flex;
+  align-items: flex-start;
+  gap: spacing.$padding-small;
+
+  &__avatar {
+    width: 32px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    gap: spacing.$padding-small;
+  }
+
+  &__name {
+    @include typography.typography-medium;
+
+    color: var(--text);
+  }
+
+  &__bio {
+    @include typography.typography-regular;
+
+    color: var(--text);
+  }
+}
+
+.image {
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: spacing.$padding-small;
+
+  &__btn {
+    @include buttons.button(
+      var(--button-primary-bg),
+      var(--text),
+      var(--button-primary-bg)
+    ) {
+      svg {
+        color: var(--text);
+        width: 16px;
+        height: auto;
+      }
+    }
+
+    @include interaction.interaction-styles {
+      background-color: var(--button-primary-bg);
+      border-color: var(--button-primary-bg);
+    }
+  }
+}
