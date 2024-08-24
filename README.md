@@ -1,4 +1,11 @@
-# Просмотр Карточек Unsplash
+# Просмотр карточек Unsplash
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
 Это React-приложение, отображающее популярные изображения из Unsplash. Приложение поддерживает бесконечную прокрутку, возможность ставить и отменять лайки, фильтрацию по залайканным изображениям и просмотр деталей изображения на отдельной странице.
 
@@ -126,10 +133,10 @@ src/
 }
 ```
 
-- **`npm start`**: Запускает приложение в режиме разработки.
-- **`npm run build`**: Создает оптимизированную сборку приложения.
-- **`npm run test`**: Запускает тесты с использованием Jest.
-- **`npm run deploy`**: Деплоит приложение на GitHub Pages.
+- **`npm start`**: запускает приложение в режиме разработки.
+- **`npm run build`**: создает оптимизированную сборку приложения.
+- **`npm run test`**: запускает тесты с использованием Jest.
+- **`npm run deploy`**: деплоит приложение на GitHub Pages.
 
 ## API сервис
 
@@ -137,8 +144,8 @@ src/
 
 ### Основные функции
 
-- **fetchCards**: Получает список популярных изображений.
-- **fetchCardById**: Получает детали конкретного изображения по его ID.
+- **fetchCards**: получает список популярных изображений.
+- **fetchCardById**: получает детали конкретного изображения по его ID.
 
 ## Redux хранилище
 
@@ -146,11 +153,11 @@ src/
 
 ### Основные действия
 
-- **fetchCards**: Загружает и сохраняет список карточек.
-- **fetchCardById**: Загружает детали карточки по ID.
-- **likeCard**: Отмечает карточку как "лайкнутую".
-- **unlikeCard**: Снимает отметку "лайкнутая" с карточки.
-- **deleteCard**: Удаляет карточку из хранилища.
+- **fetchCards**: загружает и сохраняет список карточек.
+- **fetchCardById**: загружает детали карточки по ID.
+- **likeCard**: отмечает карточку как "лайкнутую".
+- **unlikeCard**: снимает отметку "лайкнутая" с карточки.
+- **deleteCard**: удаляет карточку из хранилища.
 
 ### Запуск тестов
 
@@ -162,12 +169,12 @@ npm test
 
 ## Используемые технологии
 
-- **React**: Для построения пользовательского интерфейса.
-- **Redux Toolkit**: Для управления состоянием приложения.
-- **TypeScript**: Для типизации кода.
-- **Axios**: Для работы с HTTP запросами.
-- **Sass/SCSS**: Для стилизации компонентов.
-- **Jest**: Для тестирования кода.
+- **React**: для построения пользовательского интерфейса.
+- **Redux Toolkit**: для управления состоянием приложения.
+- **TypeScript**: для типизации кода.
+- **Axios**: для работы с HTTP запросами.
+- **Sass/SCSS**: для стилизации компонентов.
+- **Jest**: для тестирования кода.
 
 ## Вклад
 
