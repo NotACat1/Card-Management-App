@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Card-Management-App/static/css/main.a17f3005.css",
+    "main.css": "/Card-Management-App/static/css/main.825eefd8.css",
     "main.js": "/Card-Management-App/static/js/main.2ff47950.js",
     "static/js/453.5a8f1994.chunk.js": "/Card-Management-App/static/js/453.5a8f1994.chunk.js",
     "static/media/Montserrat-BlackItalic.eot": "/Card-Management-App/static/media/Montserrat-BlackItalic.e885010b57eaa0bc6e3e.eot",
@@ -68,12 +68,12 @@
     "static/media/arrow-down-circle.svg": "/Card-Management-App/static/media/arrow-down-circle.c6041047da74981fbe061d579a8e33c4.svg",
     "static/media/arrow-left-circle.svg": "/Card-Management-App/static/media/arrow-left-circle.4dacdeaba3fe7b72fcc38445e0f8db17.svg",
     "static/media/heart-fill.svg": "/Card-Management-App/static/media/heart-fill.f1f9b05b1218e46820aebad4a5b1afb9.svg",
-    "main.a17f3005.css.map": "/Card-Management-App/static/css/main.a17f3005.css.map",
+    "main.825eefd8.css.map": "/Card-Management-App/static/css/main.825eefd8.css.map",
     "main.2ff47950.js.map": "/Card-Management-App/static/js/main.2ff47950.js.map",
     "453.5a8f1994.chunk.js.map": "/Card-Management-App/static/js/453.5a8f1994.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a17f3005.css",
+    "static/css/main.825eefd8.css",
     "static/js/main.2ff47950.js"
   ]
 }
