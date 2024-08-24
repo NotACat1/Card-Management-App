@@ -1,0 +1,57 @@
+@use '@styles/mixins/typography';
+@use '@styles/mixins/interaction';
+@use '@styles/variables/spacing';
+@use '@styles/variables/transitions';
+
+.component {
+  background-color: var(--secondary);
+  padding-top: spacing.$padding-large;
+  padding-bottom: spacing.$padding-large;
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: spacing.$padding-small;
+  }
+
+  &__title {
+    @include typography.typography-medium;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: spacing.$padding-small;
+
+  &__item {
+    @include typography.typography-regular;
+
+    display: flex;
+    gap: spacing.$padding-small;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: spacing.$padding-small;
+    width: fit-content;
+    width: fit-content;
+    color: var(--text);
+    text-decoration: none;
+    transition: transitions.$transition-medium-ease-in-out;
+
+    svg {
+      height: 20px;
+      width: auto;
+    }
+
+    span {
+      text-decoration: underline;
+    }
+
+    @include interaction.interaction-styles {
+      opacity: 0.75;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+body {
+  @include theme($light-theme-colors); // Применяем тему по умолчанию
+
+  &.dark-theme {
+    @include theme($dark-theme-colors);
+  }
+}

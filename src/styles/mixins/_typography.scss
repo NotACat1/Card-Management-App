@@ -1,0 +1,31 @@
+@mixin typography(
+  $font-size,
+  $line-height: 1.5,
+  $font-weight: normal,
+  $letter-spacing: normal
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin typography-large {
+  @include typography(2.5rem, 1.2, bold, -0.05rem);
+}
+
+@mixin typography-medium {
+  @include typography(1.5rem, 1.4, semi-bold, -0.02rem);
+}
+
+@mixin typography-regular {
+  @include typography(1rem, 1.5, normal, normal);
+}
+
+@mixin typography-small {
+  @include typography(0.875rem, 1.5, normal, normal);
+}
+
+@mixin typography-caption {
+  @include typography(0.75rem, 1.2, normal, normal);
+}

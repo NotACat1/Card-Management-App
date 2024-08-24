@@ -1,0 +1,18 @@
+@use '@styles/mixins/interaction';
+@use '@styles/variables/transitions';
+
+@mixin button($bg-color, $text-color, $border-color: null) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: 1px solid if($border-color != null, $border-color, $bg-color);
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  transition: opacity transitions.$transition-medium-ease-in-out;
+
+  @content;
+
+  @include interaction.interaction-styles {
+    opacity: 0.75;
+  }
+}

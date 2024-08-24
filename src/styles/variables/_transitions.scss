@@ -1,0 +1,21 @@
+// Длительность переходов
+$transition-duration-fast: 0.2s;
+$transition-duration-medium: 0.4s;
+$transition-duration-slow: 0.6s;
+
+// Функции временного изменения
+$transition-timing-ease-in: ease-in;
+$transition-timing-ease-out: ease-out;
+$transition-timing-ease-in-out: ease-in-out;
+$transition-timing-linear: linear;
+
+// Задержка переходов
+$transition-delay-none: 0s;
+$transition-delay-short: 0.1s;
+$transition-delay-medium: 0.2s;
+$transition-delay-long: 0.3s;
+
+// Комбинированные переходы
+$transition-fast-ease-in-out: $transition-duration-fast $transition-timing-ease-in-out;
+$transition-medium-ease-in-out: $transition-duration-medium $transition-timing-ease-in-out;
+$transition-slow-ease-in-out: $transition-duration-slow $transition-timing-ease-in-out;
