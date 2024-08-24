@@ -1,0 +1,16 @@
+@use '@styles/mixins/interaction';
+@use '@styles/variables/transitions';
+
+.component {
+  color: var(--text);
+  transition: all transitions.$transition-medium-ease-in-out;
+
+  svg {
+    width: 18px;
+    height: auto;
+  }
+
+  @include interaction.interaction-styles {
+    opacity: 0.75;
+  }
+}
